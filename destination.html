@@ -22,23 +22,24 @@
         * {
             margin: 0;
             padding: 0;
-            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-family: Verdana, Geneva, sans-serif;
             text-decoration: none;
         }
 
         body {
             margin: 0;
-            background-color: rgba(0, 149, 255, 0.594);
+            background-color: #ffffffa5;
             /* no extra top padding — navbar will be in flow and stick to top */
             padding-top: 0;
         }
 
         .cont-nav {
             display: flex;
-            gap: 100px;
+            gap: 7px;
             align-items: center;
             padding: 10px 20px;
-            background-color: rgba(255, 255, 255, 0.669);
+            background-color: #024d86;
+            color: #A9D6E5;
             /* use sticky so the nav sits in normal flow then sticks to top */
             position: sticky;
             top: 0;
@@ -57,23 +58,25 @@
             width: 50px;
         }
 
-        .nama-web {
-            font-family: 'Chewy', cursive;
-            font-size: 1.5em;
-            color: rgb(0, 0, 0);
+        .nama-web h2 {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2em;
+            color: rgb(255, 255, 255);
+            margin-right: 800px;
         }
 
         .nav a {
             text-decoration: none;
             right: 35px;
-            color: rgb(0, 0, 0);
+            color: #ffffff;
             margin: 0 15px;
             font-size: 1.2em;
             transition: color 0.3s;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         .nav a:hover {
-            color: #0077ff;
+            color: #A9D6E5;
         }
 
         .setting {
@@ -83,6 +86,7 @@
             height: var(--nav-height);
             display: flex;
             align-items: center;
+            fill: white;
             /* vertically center inside nav */
             gap: 10px;
             z-index: 100000;
@@ -94,7 +98,7 @@
         .menu-button {
             background: transparent;
             border: none;
-            color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
             font-size: 1.4em;
             cursor: pointer;
             padding: 6px;
@@ -110,7 +114,7 @@
             position: absolute;
             right: 0;
             top: 110%;
-            background: rgb(0, 0, 0);
+            background: #024d86;
             min-width: 160px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
             border-radius: 6px;
@@ -123,6 +127,7 @@
             padding: 10px 14px;
             color: #ffffff;
             text-decoration: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 0.95em;
         }
 
@@ -148,7 +153,7 @@
         }
 
         .gear path:hover {
-            fill: rgb(2, 113, 249);
+            fill: #A9D6E5;
         }
 
         /* keep banner and cards below the navbar in stacking order */
@@ -205,7 +210,7 @@
 <body>
     <div class="cont-nav">
         <div class="logo">
-            <img src="asset/img/Logo NTT.png" alt="Nusantara Travel Logo" width="150px" height="80px">
+            <img src="asset/img/NusanTT.png" alt="Nusantara Travel Logo" width="150px" height="80px">
         </div>
         <div class="nama-web">
             <h2>Nusantara Travel</h2>
@@ -225,9 +230,9 @@
                     <button class="menu-button" aria-haspopup="true" aria-expanded="false" id="navDotsBtn" title="More">
                         <!-- simple vertical dots using inline SVG -->
                         <svg class="dots-vertical" viewBox="0 0 24 24" aria-hidden="true">
-                            <circle cx="12" cy="5" r="1.8" fill="black"></circle>
-                            <circle cx="12" cy="12" r="1.8" fill="black"></circle>
-                            <circle cx="12" cy="19" r="1.8" fill="black"></circle>
+                            <circle cx="12" cy="5" r="1.8" fill="white"></circle>
+                            <circle cx="12" cy="12" r="1.8" fill="white"></circle>
+                            <circle cx="12" cy="19" r="1.8" fill="white"></circle>
                         </svg>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="navDotsBtn" id="navDotsMenu">
@@ -244,7 +249,7 @@
                     <button class="menu-button" aria-haspopup="true" aria-expanded="false" id="settingsBtn"
                         title="Settings">
                         <svg class="gear" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill="black"
+                            <path fill="white"
                                 d="M19.14,12.94a7.14,7.14,0,0,0,0-1.88l2.11-1.65a.5.5,0,0,0,.12-.64l-2-3.46a.5.5,0,0,0-.6-.22l-2.49,1a7.28,7.28,0,0,0-1.6-.93L14.5,2.5a.5.5,0,0,0-.5-.5H10a.5.5,0,0,0-.5.5L9,4.37a7.28,7.28,0,0,0-1.6.93l-2.49-1a.5.5,0,0,0-.6.22l-2,3.46a.5.5,0,0,0,.12.64L4.86,11a7.14,7.14,0,0,0,0,1.88L2.75,14.53a.5.5,0,0,0-.12.64l2,3.46a.5.5,0,0,0,.6.22l2.49-1a7.28,7.28,0,0,0,1.6.93L9.5,21.5a.5.5,0,0,0,.5.5h4a.5.5,0,0,0,.5-.5l.5-2.37a7.28,7.28,0,0,0,1.6-.93l2.49,1a.5.5,0,0,0,.6-.22l2-3.46a.5.5,0,0,0-.12-.64ZM12,15.5A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z">
                             </path>
                         </svg>
@@ -314,16 +319,16 @@
     <!-- Category -->
     <section class="container mt-5 pt-4">
         <h2 class="mb-4"
-            style="font-weight:750; padding: 50px; background:linear-gradient(#010b43b5,#002afd); background-clip: text; color: transparent;">
-            [ Kategori ]</h2>
+            style="font-size: 2.4rem; font-weight:750; padding: 50px; background:linear-gradient(#012A4A,#012A4A); background-clip: text; color: transparent;">
+             Kategori </h2>
         <div class="row gx-4 gy-4 align-items-stretch" id="card-c">
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card photo-card h-100 shadow-sm">
                     <div class="card-img-top img-cover" style="background-image:url('asset/img/foto-1.jpg');"></div>
                     <div class="card-body d-flex align-items-end p-0">
                         <div class="card-overlay p-3 w-100">
-                            <h5 class="card-title mb-1" style="color: rgb(4, 0, 88);">Sejarah dan Budaya</h5>
-                            <h5 class="card-title mb-1" style="color: rgb(4, 0, 88);">[History and Culture]</h5>
+                            <h5 class="card-title mb-1" style="color: #012A4A; font-family: Arial, Helvetica, sans-serif; font-size: 2rem;">Sejarah dan Budaya</h5>
+                            <h5 class="card-title mb-1" style="color: #012A4A; font-family: Arial, Helvetica, sans-serif; ">[History and Culture]</h5>
                             <p class="card-text small">Body text for whatever you'd like to add more to the subheading.
                             </p>
                         </div>
@@ -336,8 +341,8 @@
                     <div class="card-img-top img-cover" style="background-image:url('asset/img/foto-2.jpg');"></div>
                     <div class="card-body d-flex align-items-end p-0">
                         <div class="card-overlay p-3 w-100">
-                            <h5 class="card-title mb-1" style="color: rgb(4, 0, 88);">Alam</h5>
-                            <h5 class="card-title mb-1" style="color: rgb(4, 0, 88);">[Nature]</h5>
+                            <h5 class="card-title mb-1" style="color: #012A4A; font-family: Arial, Helvetica, sans-serif; font-size: 2rem;">Alam</h5>
+                            <h5 class="card-title mb-1" style="color: #012A4A; font-family: Arial, Helvetica, sans-serif; ">[Nature]</h5>
                             <p class="card-text small">Body text for whatever you'd like to add more to the subheading.
                             </p>
                         </div>
@@ -350,8 +355,8 @@
                     <div class="card-img-top img-cover" style="background-image:url('asset/img/foto.jpg'); "></div>
                     <div class="card-body d-flex align-items-end p-0">
                         <div class="card-overlay p-3 w-100">
-                            <h5 class="card-title mb-1" style="color: rgb(4, 0, 88);">Khusus</h5>
-                            <h5 class="card-title mb-1" style="color: rgb(4, 0, 88);">[Special Interest]</h5>
+                            <h5 class="card-title mb-1" style="color: #012A4A; font-family: Arial, Helvetica, sans-serif; font-size: 2rem;">Khusus</h5>
+                            <h5 class="card-title mb-1" style="color: #012A4A; font-family: Arial, Helvetica, sans-serif; ">[Special Interest]</h5>
                             <p class="card-text small">Body text for whatever you'd like to add more to the subheading.
                             </p>
                         </div>
@@ -362,8 +367,8 @@
 
     <!-- Popular Package -->
     <h2 class="title"
-        style="font-weight:750; margin: 10px 0; padding: 45px ; background:linear-gradient(#010b43b5,#002afd); background-clip: text; color: transparent; margin-left: 75px;">
-        [ Populer ]</h2>
+        style="font-size: 2.4rem; font-weight:750; margin: 10px 0; padding: 45px ; background:linear-gradient(#010b43b5,#012A4A); background-clip: text; color: transparent; margin-left: 75px;">
+         Populer </h2>
     <div class="populer-package">
         <div class="populer-c">
             <div class="populer-slide">
@@ -476,8 +481,8 @@
     <div class="testimonials">
         <div class="buble-respon">
             <h2
-                style="font-weight:750; padding: 40px; background:linear-gradient(#001eff,#ffffff); background-clip: text; color: transparent; text-align: center; margin-top: 50px;">
-                [ Testimoni ]</h2>
+                style="font-size: 2.4rem; font-weight:750; padding: 40px; background:linear-gradient(#020e65,#012A4A); background-clip: text; color: transparent; text-align: center; margin-top: 50px;">
+                 Testimoni </h2>
             <div class="testi-c">
                 <div class="testi-slide">
                     <p>"Nusantara Travel membuat perjalanan saya ke Bali menjadi sangat mudah dan menyenangkan! Paket
