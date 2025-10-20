@@ -38,7 +38,7 @@
     text-shadow: none;
 }
 
-.caption h3{ margin: 0 0 6px 0; font-size: 1.05rem; font-weight: 700; color:#006eff }
+.caption h3{ margin: 0 0 6px 0; font-size: 1.05rem; font-weight: 700; color:#024d86 }
 .caption p{ margin: 0; font-size: .9rem; color:#4a4747 }
 
 /* controls (prev/next) style tweaks to be round and vertically centered */
@@ -59,9 +59,9 @@
 .testimonials { padding: 40px 0; }
 .buble-respon { max-width: 1100px; margin: 0 auto; }
 .testi-c { display: flex; gap: 28px; align-items: stretch; justify-content: space-between; }
-.testi-slide { background: #00eeff; color: #fff; border-radius: 18px; padding: 18px; box-sizing: border-box; flex: 1 1 30%; min-width: 260px; position: relative; }
-.testi-slide h3 { margin-top: 14px; font-size: 0.95rem; color: #002f76; font-weight:700; }
-.testi-slide p { color: #000000; opacity: 0.95; line-height: 1.4; }
+.testi-slide { background: #003863; color: #fff; border-radius: 18px; padding: 18px; box-sizing: border-box; flex: 1 1 30%; min-width: 260px; position: relative; }
+.testi-slide h3 { margin-top: 14px; font-size: 0.95rem; color: #bbd6ff; font-weight:700; }
+.testi-slide p { color: #ffffff; opacity: 0.95; line-height: 1.4; }
 
 /* faux image area (decorative only) */
 .testi-slide::before { content: ""; display: block; width: calc(100% - 40px); height: 110px; background: linear-gradient(180deg, #fff 0%, #f4f4f4 100%); border-radius: 8px; margin: 10px 20px; }
@@ -220,7 +220,7 @@ button:hover{
     }
 
     .footer-col a:hover {
-      color: #fff;
+      color: #ffffff;
     }
 
     .lang-btn {
